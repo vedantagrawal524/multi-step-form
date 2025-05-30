@@ -6,7 +6,7 @@
 }
 
 @theme {
-  font-family: "Ubuntu", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
 
   --breakpoint-xs: 620px;
 
