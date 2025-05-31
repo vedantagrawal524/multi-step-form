@@ -56,7 +56,7 @@ export default function Summary() {
         <p className="text-Grey-500/80 text-[0.8rem] font-[500]">
           Total (per Month)
         </p>
-        <p className="text-Purple-600 text-[1rem] font-[600]">+$12/mo</p>
+        <p className="text-Purple-600 text-[0.95rem] font-[600]">+$12/mo</p>
       </div>
     </section>
   );
