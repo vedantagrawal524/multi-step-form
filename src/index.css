@@ -23,3 +23,13 @@
   --color-Red-500: hsl(354, 84%, 57%);
   --color-White: hsl(0, 100%, 100%);
 }
+
+@layer components {
+  .inputField.error {
+    @apply outline-Red-500! outline-2!;
+  }
+
+  .errorMsg.error {
+    @apply inline-block!;
+  }
+}
