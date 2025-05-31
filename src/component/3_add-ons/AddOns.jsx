@@ -1,4 +1,7 @@
+import { useFormContext } from "../../hooks/useFormContext.js";
+
 export default function AddOns() {
+  const { addOns, handleToggleAddOn, isYearly } = useFormContext();
   return (
     <section className="flex w-full flex-col gap-1 p-1 pb-6">
       <h1 className="text-Blue-950 text-[1.5rem] leading-8 font-[700]">
@@ -15,6 +18,8 @@ export default function AddOns() {
             className="outline-Grey-500/90 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 active:bg-Purple-600/6 hover:bg-Purple-600/8 focus:bg-Purple-600/8 flex w-full flex-row items-center justify-between gap-4 rounded-[0.4rem] border-0 p-3 py-4 outline-1 hover:cursor-pointer hover:outline-2 focus:outline-2 active:outline-2"
           >
             <input
+              checked={addOns.includes("Online service")}
+              onChange={() => handleToggleAddOn("Online service")}
               type="checkbox"
               name="addOns"
               id="onlineService"
@@ -38,9 +43,10 @@ export default function AddOns() {
               </p>
             </div>
 
-            <p className="text-Purple-600 text-[0.76rem] font-[500]">+$1/mo</p>
-
-            {/* $10/yr */}
+            <p className="text-Purple-600 text-[0.76rem] font-[500]">
+              {" "}
+              {isYearly() ? "+$10/yr" : "+$1/mo"}
+            </p>
           </label>
 
           <label
@@ -48,6 +54,8 @@ export default function AddOns() {
             className="outline-Grey-500/90 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 active:bg-Purple-600/6 hover:bg-Purple-600/8 focus:bg-Purple-600/8 flex w-full flex-row items-center justify-between gap-4 rounded-[0.4rem] border-0 p-3 py-4 outline-1 hover:cursor-pointer hover:outline-2 focus:outline-2 active:outline-2"
           >
             <input
+              checked={addOns.includes("Larger storage")}
+              onChange={() => handleToggleAddOn("Larger storage")}
               type="checkbox"
               name="addOns"
               id="largerStorage"
@@ -71,9 +79,10 @@ export default function AddOns() {
               </p>
             </div>
 
-            <p className="text-Purple-600 text-[0.76rem] font-[500]"> +$2/mo</p>
-
-            {/* $20/yr */}
+            <p className="text-Purple-600 text-[0.76rem] font-[500]">
+              {" "}
+              {isYearly() ? "+$20/yr" : "+$2/mo"}
+            </p>
           </label>
 
           <label
@@ -81,6 +90,8 @@ export default function AddOns() {
             className="outline-Grey-500/90 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 active:bg-Purple-600/6 hover:bg-Purple-600/8 focus:bg-Purple-600/8 flex w-full flex-row items-center justify-between gap-4 rounded-[0.4rem] border-0 p-3 py-4 outline-1 hover:cursor-pointer hover:outline-2 focus:outline-2 active:outline-2"
           >
             <input
+              checked={addOns.includes("Customizable Profile")}
+              onChange={() => handleToggleAddOn("Customizable Profile")}
               type="checkbox"
               name="addOns"
               id="customizableProfile"
@@ -104,9 +115,10 @@ export default function AddOns() {
               </p>
             </div>
 
-            <p className="text-Purple-600 text-[0.76rem] font-[500]">+$2/mo</p>
-
-            {/* $20/yr */}
+            <p className="text-Purple-600 text-[0.76rem] font-[500]">
+              {" "}
+              {isYearly() ? "+$20/yr" : "+$2/mo"}
+            </p>
           </label>
         </fieldset>
       </div>
