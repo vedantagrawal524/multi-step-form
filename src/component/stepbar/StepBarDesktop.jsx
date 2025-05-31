@@ -7,7 +7,6 @@ export default function SideBarDesktop() {
       <SideBarItem />
       <SideBarItem />
       <SideBarItem />
-      <SideBarItem />
     </section>
   );
 }

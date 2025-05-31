@@ -7,7 +7,6 @@ export default function SideBarMobile() {
       <SideBarItem />
       <SideBarItem />
       <SideBarItem />
-      <SideBarItem />
     </section>
   );
 }

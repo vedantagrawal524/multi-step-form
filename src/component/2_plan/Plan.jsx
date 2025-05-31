@@ -11,7 +11,7 @@ export default function Plan() {
 
       <div className="mt-6 flex flex-col justify-center gap-4">
         <fieldset className="xs:flex-row flex w-full flex-col justify-between gap-4">
-          <div className="outline-Grey-500/90 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 active:bg-Purple-600/6 xs:flex-col xs:w-[30%] xs:justify-between xs:items-start xs:h-[9.5rem] flex w-full flex-row items-center gap-4 rounded-[0.4rem] border-0 p-3 outline-1 hover:cursor-pointer hover:outline-2 focus:outline-2 active:outline-2">
+          <div className="outline-Grey-500/90 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 active:bg-Purple-600/6 xs:flex-col xs:w-[30%] xs:justify-between xs:items-start xs:h-[9.5rem] hover:bg-Purple-600/8 focus:bg-Purple-600/8 flex w-full flex-row items-center gap-4 rounded-[0.4rem] border-0 p-3 outline-1 hover:cursor-pointer hover:outline-2 focus:outline-2 active:outline-2">
             <img
               src="/images/icon-arcade.svg"
               alt="Arcade"
@@ -23,14 +23,14 @@ export default function Plan() {
                 Arcade
               </h2>
               <p className="text-Grey-500/80 text-[0.8rem] font-[500]">$9/mo</p>
-              {/* 90 */}
+              {/* $90/yr */}
               <p className="text-Blue-950 text-[0.7rem] font-[500]">
                 2 months free
               </p>
             </div>
           </div>
 
-          <div className="outline-Grey-500/90 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 active:bg-Purple-600/6 xs:flex-col xs:w-[30%] xs:justify-between xs:items-start xs:h-[9.5rem] flex w-full flex-row items-center gap-4 rounded-[0.4rem] border-0 p-3 outline-1 hover:cursor-pointer hover:outline-2 focus:outline-2 active:outline-2">
+          <div className="outline-Grey-500/90 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 active:bg-Purple-600/6 xs:flex-col xs:w-[30%] xs:justify-between xs:items-start xs:h-[9.5rem] hover:bg-Purple-600/8 focus:bg-Purple-600/8 flex w-full flex-row items-center gap-4 rounded-[0.4rem] border-0 p-3 outline-1 hover:cursor-pointer hover:outline-2 focus:outline-2 active:outline-2">
             <img
               src="/images/icon-advanced.svg"
               alt="Advanced"
@@ -50,7 +50,7 @@ export default function Plan() {
             </div>
           </div>
 
-          <div className="outline-Grey-500/90 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 active:bg-Purple-600/6 xs:flex-col xs:w-[30%] xs:justify-between xs:items-start xs:h-[9.5rem] flex w-full flex-row items-center gap-4 rounded-[0.4rem] border-0 p-3 outline-1 hover:cursor-pointer hover:outline-2 focus:outline-2 active:outline-2">
+          <div className="outline-Grey-500/90 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 active:bg-Purple-600/8 xs:flex-col xs:w-[30%] xs:justify-between xs:items-start xs:h-[9.5rem] hover:bg-Purple-600/8 focus:bg-Purple-600/8 flex w-full flex-row items-center gap-4 rounded-[0.4rem] border-0 p-3 outline-1 hover:cursor-pointer hover:outline-2 focus:outline-2 active:outline-2">
             <img src="/images/icon-pro.svg" alt="Pro" className="h-auto w-9" />
 
             <div className="flex flex-col justify-center gap-0">
