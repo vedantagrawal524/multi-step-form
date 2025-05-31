@@ -23,6 +23,7 @@ export default function Info() {
           <input
             value={info.name}
             onChange={handleInfoChange}
+            autoComplete="on"
             type="text"
             name="name"
             id="name"
@@ -47,6 +48,7 @@ export default function Info() {
           <input
             value={info.emailAddress}
             onChange={handleInfoChange}
+            autoComplete="on"
             type="text"
             name="emailAddress"
             id="emailAddress"
@@ -71,10 +73,11 @@ export default function Info() {
           <input
             value={info.phoneNumber}
             onChange={handleInfoChange}
+            autoComplete="on"
             type="tel"
             name="phoneNumber"
             id="phoneNumber"
-            placeholder="e.g. +91 1234567890"
+            placeholder="e.g. +1 234 567 890"
             className={`outline-Grey-500/90 text-Blue-950 placeholder:text-Grey-500/70 hover:outline-Purple-600 active:outline-Purple-600 focus:outline-Purple-600 inputField active:outline-2" w-full rounded-[0.3rem] border-0 p-1.5 px-2 text-[0.95rem] font-[500] outline-1 placeholder:text-[0.9rem] hover:cursor-pointer hover:outline-2 focus:outline-2 ${isError("phoneNumber")}`}
           />
 

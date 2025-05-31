@@ -48,7 +48,7 @@ export default function FormContextProvider({ children }) {
       newErrors.emailAddress = true;
     }
 
-    const phonePattern = /^\+\d{1,2}\s\d{10}$/;
+    const phonePattern = /^\d{10}$/;
     if (!phonePattern.test(info.phoneNumber.trim())) {
       newErrors.phoneNumber = true;
     }
