@@ -1,4 +1,4 @@
-const MultiUser = require("../model/MultiUser");
+const User = require("../model/User");
 
 const submitMultiStepForm = async (req, res) => {
   const { name, emailAddress, phoneNumber, plan, duration, addOns } = req.body;
@@ -10,7 +10,7 @@ const submitMultiStepForm = async (req, res) => {
   }
 
   try {
-    const result = await MultiUser.create({
+    const result = await User.create({
       name: name.trim(),
       emailAddress: emailAddress.trim(),
       phoneNumber: phoneNumber.trim(),
