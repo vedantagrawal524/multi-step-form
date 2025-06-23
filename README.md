@@ -11,7 +11,8 @@ It helped me enhance my skills in **React**, **form handling**, **conditional re
   - [Features](#features)  
   - [Screenshots](#screenshots)  
   - [Live Links](#live-links)  
-  - [Built With](#built-with)  
+  - [Built With](#built-with)
+  - [Backend Features](#backend-features)
 - [Author](#author)  
 
 ---
@@ -34,16 +35,16 @@ A dynamic multi-step form that guides users through a sequential process to coll
 
 ### Screenshots
 
-![Desktop View active state Step-1](./public/design/active-states/active-states-step-1.jpg)  
-![Desktop View active state  Step-2](./public/design/active-states/active-states-step-2.jpg)  
-![Desktop View active state  Step-3](./public/design/active-states/active-states-step-3.jpg)  
-![Desktop View active state  Step-4](./public/design/active-states/active-states-step-4.jpg)
+![Desktop View active state Step-1](./client/public/design/active-states/active-states-step-1.jpg)  
+![Desktop View active state  Step-2](./client/public/design/active-states/active-states-step-2.jpg)  
+![Desktop View active state  Step-3]/client(./public/design/active-states/active-states-step-3.jpg)  
+![Desktop View active state  Step-4](./client/public/design/active-states/active-states-step-4.jpg)
 
-![Mobile View Step-1](./public/design/mobile/mobile-design-step-1.jpg)  
-![Mobile View Step-2](./public/design/mobile/mobile-design-step-2-yearly.jpg)  
-![Mobile View Step-3](./public/design/mobile/mobile-design-step-3-yearly.jpg)  
-![Mobile View Step-4](./public/design/mobile/mobile-design-step-4-yearly.jpg)  
-![Mobile View Step-5](./public/design/mobile/mobile-design-step-5.jpg)  
+![Mobile View Step-1](./client/public/design/mobile/mobile-design-step-1.jpg)  
+![Mobile View Step-2](./client/public/design/mobile/mobile-design-step-2-yearly.jpg)  
+![Mobile View Step-3](./client/public/design/mobile/mobile-design-step-3-yearly.jpg)  
+![Mobile View Step-4](./client/public/design/mobile/mobile-design-step-4-yearly.jpg)  
+![Mobile View Step-5](./client/public/design/mobile/mobile-design-step-5.jpg)  
 
 ---
 
@@ -62,7 +63,21 @@ A dynamic multi-step form that guides users through a sequential process to coll
 - React  
 - Form validation  
 - Responsive design principles  
-- Vercel (deployment)
+- [Vercel](https://vercel.com/) for deployment
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- [Render](https://render.com/) for Server deployment  
+
+---
+
+### Backend Features
+
+- Created an **Express.js server** to handle Form submissions.
+- Information submitted via the form are stored securely in a **MongoDB database**.
+- Used **Mongoose** to define the user schema and perform validations.
+- Hosted backend using **Render**.
 
 ---
 

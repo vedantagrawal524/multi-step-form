@@ -7,13 +7,41 @@ export default function FormContextProvider({ children }) {
     if (step > 1) setStep((prev) => prev - 1);
   };
 
-  const nextStep = () => {
+  const nextStep = async () => {
     if (step === 1) {
       if (validateInfo()) {
         setStep((prev) => prev + 1);
       }
-    } else {
+    } else if (step < 4) {
       setStep((prev) => prev + 1);
+    } else {
+      try {
+        const response = await fetch(import.meta.env.VITE_API_BASE_URL + "/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: info.name,
+            emailAddress: info.emailAddress,
+            phoneNumber: info.phoneNumber,
+            plan,
+            duration,
+            addOns,
+          }),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          console.log("Form submitted successfully");
+          setStep((prev) => prev + 1);
+        } else {
+          console.error("Submission error:", result.message);
+          alert("Failed to submit form. Please try again.");
+        }
+      } catch (err) {
+        console.error("Server error:", err);
+        alert("Server error. Please try again later.");
+      }
     }
   };
 
